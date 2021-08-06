@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuro Hospital</title>
+  <link rel="stylesheet" href="../doc/neuro.css">
+</head>
+
+<body>
+  <div class="Nav">
+    <p>Neuro Medical Hospital,Biratnager</p>
+    <ul>
+      <li><a href="../doc/index.html">Home</a></li>
+      <li><a href="Doctor.html">Doctors</a></li>
+      <li><a href="Services.html">Register</a></li>
+      <li><a href="Blog.html">About Us</a></li>
+      <li><a href="../doc/Contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="slider-box">
+    <div id="slides">
+      <img src="../images/doctors.jfif">
+      <img src="../images/patient.jfif">
+      <img src="../images/operation.jfif">
+      <img src="../images/bed.jfif">
+    </div>
+    <div class="indicator">
+      <span id="btn1"></span>
+      <span id="btn2"></span>
+    </div>
+    </div>
+    <script>
+
+      var slide = document.getElementById("slides");
+      var btn1 = document.getElementById('btn1');
+      var btn2 = document.getElementById('btn2');
+      var btn3 = document.getElementById('btn3');
+
+      btn1.onclick = function () {
+          slide.style.transform = "translateX(0px)";
+          btn1.classList.add('active');
+          btn2.classList.remove('active');
+          btn3.classList.remove('active');
+      };
+      btn2.onclick = function () {
+          slide.style.transform = "translateX(-100%)";
+          btn1.classList.remove('active');
+          btn2.classList.add('active');
+          btn3.classList.remove('active');
+      };
+  </script>
+</body>
+<footer>
+  <div class="main-content">
+  <h1>Address</h1>
+  <div class="Location">
+    <span class="text">JahadaRoad-13,Biratnager</span>
+  </div>
+  <div class="Phone">
+    <span class="text"> 166-021-52777 </span>
+  </div>
+  <div class="Email">
+    <span class="text">info@neurohospital.com.np</span>
+  </div>
+  </div>
+</footer>
+</html>
